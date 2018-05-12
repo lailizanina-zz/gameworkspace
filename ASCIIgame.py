@@ -23,7 +23,7 @@ border_pen.hideturtle()
 #Create the player turtle
 player = turtle.Turtle()
 player.color("red")
-player.shape("retangle")
+player.shape("triangle")
 player.penup()
 player.speed(0)
 player.setposition(0,-250)
@@ -51,7 +51,5 @@ def move_right():
 turtle.listen()
 turtle.onkey(move_left, "Left")
 turtle.onkey(move_right, "Right")
-
-
 
 delay = input("Press enter to finish")
