@@ -5,7 +5,7 @@ import os
 #Set up the screen
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.title("space Warriors")
+wn.title("Space Warriors")
 
 #Draw border
 border_pen = turtle.Turtle()
@@ -45,7 +45,6 @@ def move_right():
     if x < 290:
         x = 290
     player.setx(x)
-
 
 #Create keyboard bindings
 turtle.listen()
