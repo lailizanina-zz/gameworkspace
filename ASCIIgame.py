@@ -32,17 +32,17 @@ player.setheading(90)
 playerspeed = 15
 
 #There is the enemy
-enemy = turtle.turtle()
+enemy = turtle.Turtle()
 enemy.color("red")
 enemy.shape("circle")
 enemy.penup()
 enemy.speed(0)
-enemy.setupposition(-200, 250)
+enemy.setposition(-200, 250)
 
 enemyspeed = 2
 
 #Here is the bullet
-bullet = turtle.turtle
+bullet = turtle.Turtle()
 bullet.color = ("yellow")
 bullet.shape = ("triangle")
 bullet.penup()
@@ -83,16 +83,16 @@ while True:
 
     #move the enemy back and down
     if enemy.xcor() > 280:
-        y = enemy.ycor
+        y = enemy.ycor()
         y -= 40
         enemyspeed *= -1
-        enemy.set(y)
+        enemy.sety(y)
         
 
     if enemy.xcor() > -280:
-        y = enmy.ycor
+        y = enemy.ycor()
         y -= 40
         enemyspeed *= -1
-        enemy.set(y)
+        enemy.sety(y)
 
 delay = input("Press enter to finish")
