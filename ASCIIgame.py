@@ -122,4 +122,7 @@ while True:
         bullet.hideturtle()
         bulletstate = "ready"
 
+
+
+
 delay = input("Press enter to finish")
